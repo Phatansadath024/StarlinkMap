@@ -1,5 +1,7 @@
 # StarlinkMap
 
+https://starlinkfn.azurewebsites.net/api/http_trigger
+
 import os
 import pandas as pd
 import sqlalchemy as sa
