@@ -1,0 +1,178 @@
+﻿1,Albania ,41.3275,19.8189,1,39,118,24,Hughesnet & Viasat,0,0,0
+2,Austria ,48.2082,16.3738,1,95,170,26,Hughesnet & Viasat,0,0,0
+3,Belgium ,50.8503,4.3517,1,36,152,24,Hughesnet & Viasat,0,0,0
+4,Bosnia and Herzegovina   ,43.8563,18.4131,1,36,112,23,Hughesnet & Viasat,0,0,0
+5,Bulgaria ,42.6977,23.3219,1,36,173,27,Hughesnet & Viasat,0,0,0
+6,Croatia ,45.815,15.9819,1,36,216,25,Hughesnet & Viasat,0,0,0
+7,Cyprus ,35.1856,33.3823,1,37,165,29,Hughesnet & Viasat,0,0,0
+8,Czech Republic ,50.0755,14.4378,1,37,136,23,Hughesnet & Viasat,0,0,0
+9,Denmark ,55.6761,12.5683,1,40,121,24,Hughesnet & Viasat,0,0,0
+10,Estonia ,59.437,24.7535,1,39,107,23,Hughesnet & Viasat,0,0,0
+11,Finland ,60.1695,24.9354,1,73,163,35,Hughesnet & Viasat,0,0,0
+12,France ,48.8566,2.3522,1,38,182,26,Hughesnet & Viasat,0,0,0
+13,Germany ,52.52,13.405,1,35,174,24,Hughesnet & Viasat,0,0,0
+14,Greece ,37.9838,23.7275,1,35,155,23,Hughesnet & Viasat,0,0,0
+15,Hungary ,47.4979,19.0402,1,38,188,27,Hughesnet & Viasat,0,0,0
+16,Iceland ,64.1355,-21.8954,1,38,188,27,Hughesnet & Viasat,0,0,0
+17,Ireland ,53.3498,-6.2603,1,38,150,23,Hughesnet & Viasat,0,0,0
+18,Italy ,41.9028,12.4964,1,37,111,22,Hughesnet & Viasat,0,0,0
+19,Lithuania ,54.6872,25.2797,1,35,169,32,Hughesnet & Viasat,0,0,0
+20,Luxembourg ,49.6117,6.1319,1,38,131,22,Hughesnet & Viasat,0,0,0
+21,Malta ,35.8997,14.5147,1,35,170,31,Hughesnet & Viasat,0,0,0
+22,Moldova ,47.0105,28.8638,1,38,155,23,Hughesnet & Viasat,0,0,0
+23,Netherlands ,52.3676,4.9041,1,40,178,25,Hughesnet & Viasat,0,0,0
+24,Norway ,59.9139,10.7522,1,39,112,23,Hughesnet & Viasat,0,0,0
+25,Poland ,52.2297,21.0122,1,37,154,23,Hughesnet & Viasat,0,0,0
+26,Portugal ,38.7223,-9.1393,1,43,173,25,Hughesnet & Viasat,0,0,0
+27,Serbia ,44.7866,20.4489,1,37,209,31,Hughesnet & Viasat,0,0,0
+28,Slovakia ,48.1486,17.1077,1,35,186,31,Hughesnet & Viasat,0,0,0
+29,Slovenia ,46.0569,14.5058,1,36,157,27,Hughesnet & Viasat,0,0,0
+30,Spain ,40.4168,-3.7038,1,37,150,26,Hughesnet & Viasat,0,0,0
+31,Sweden ,59.3293,18.0686,1,39,173,26,Hughesnet & Viasat,0,0,0
+32,Switzerland ,46.9481,7.4474,1,36,144,25,Hughesnet & Viasat,0,0,0
+33,Turkey ,39.9334,32.8597,1,40,115,22,Hughesnet & Viasat,0,0,0
+34,Ukraine ,50.4501,30.5234,1,47,190,31,Hughesnet & Viasat,0,0,0
+35,United Kingdom ,51.5074,-0.1278,1,37,145,23,Hughesnet & Viasat,0,0,0
+36,China,35,105,0,0,0,0,China Satcom,40,50,10
+37,Japan,36,138,1,30,220,25,0,0,0,0
+38,South Korea,37,127.5,0,0,0,0,KT SAT,0,0,0
+39,North Korea,40,127,0,0,0,0,0,0,0,0
+40,Mongolia,46,105,1,37,220,25,0,0,0,0
+41,Taiwan,23.5,121,0,0,0,0,0,0,0,0
+42,Armenia,40,45,0,0,0,0,HughesNet,600,25,3
+43,Azerbaijan,40.5,47.5,0,0,0,0,Azercosmos,0,0,0
+44,Bahrain,26,50.55,0,0,0,0,Arabsat,0,0,0
+45,Cyprus,35,33,1,35,220,25,0,0,0,0
+46,Georgia,42,43.5,1,0,0,0,0,0,0,0
+47,Iraq,33,44,0,0,0,0,vizocom vsat,700,20,4
+48,Israel,31.5,34.75,0,0,0,0,Gilat Satellite Networks,800,50,10
+49,Jordan,31,36,0,0,0,0,vizocom vsat,700,20,4
+50,Kuwait,29.3375,47.6581,0,0,0,0,vizocom vsat,700,20,4
+51,Lebanon,33.8333,35.8333,0,0,0,0,YahClick (Yahsat)-MEconnect,0,0,0
+52,Oman,21,57,0,0,0,0,vizocom vsat,700,20,4
+53,Palestine,32,35.25,0,0,0,0,vizocom vsat,700,20,4
+54,Qatar,25.5,51.25,0,0,0,0,vizocom vsat,700,20,4
+55,Saudi Arabia,25,45,0,0,0,0,vizocom vsat,700,20,4
+56,Syria,35,38,0,0,0,0,0,0,0,0
+57,Turkey,39,35,0,0,0,0,YahClick (Yahsat)- ClickNet / vizocom vsat,800,25,5
+58,United Arab Emirates,24,54,0,0,0,0,YahClick (Yahsat)- IEC Telecom / vizocom vsat,800,25,5
+59,Yemen,15,48,0,0,0,0,YahClick (Yahsat) - TeleYemen / vizocom vsat,800,25,5
+60,Kazakhstan,48,68,0,0,0,0,Vizocom,50,30,10
+61,Kyrgyzstan ,41,75,0,0,0,0,Vizocom,50,30,10
+62,Tajikistan,39,71,0,0,0,0,Vizocom,50,30,10
+63,Turkmenistan,40,60,0,0,0,0,Vizocom,50,30,10
+64,Uzbekistan,41,64,0,0,0,0,Vizocom,50,30,10
+65,Brunei Darussalam,4.5,114.6667,0,0,0,0,Vizocom,0,0,0
+66,Cambodia,13,105,0,0,0,0,Vizocom,50,30,10
+67,Indonesia,-5,120,1,50,220,25,Vizocom,0,0,0
+68,Lao People's Democratic Republic,18,105,0,0,0,0,Vizocom,50,30,10
+69,Malaysia,2.5,112.5,1,0,220,25,0,0,0,0
+70,Myanmar,22,98,0,0,0,0,Vizocom,50,30,10
+71,Philippines,13,122,0,0,0,0,0,50,30,10
+72,Singapore,1.3667,103.8,0,0,0,0,Vizocom,50,30,10
+73,Thailand,15,100,0,0,0,0,Vizocom,50,30,10
+74,Timor-Leste,-8.55,125.5167,0,0,0,0,Vizocom,50,30,10
+75,Vietnam,16,106,0,0,0,0,Vizocom,50,30,10
+76,Afghanistan,33,65,0,0,0,0,Vizocom,50,30,10
+77,Bangladesh,24,90,0,0,0,0,Vizocom,50,30,10
+78,Bhutan,27.5,90.5,0,0,0,0,Vizocom,50,30,10
+79,India,20,77,0,0,0,0,Jio Fibre,60,1000,200
+80,Iran (Islamic Republic of),32,53,0,0,0,0,Vizocom,50,30,10
+81,Maldives,3.25,73,0,0,0,0,Vizocom,50,30,10
+82,Nepal,28,84,0,0,0,0,Vizocom,50,30,10
+83,Pakistan,30,70,0,0,0,0,Vizocom,50,30,10
+84,Sri Lanka,7,81,0,0,0,0,0,0,0,0
+85,Algeria,28,3,0,0,0,0,Vizocom,50,30,10
+86,Angola,-12.5,18.5,0,0,0,0,Vizocom,50,30,10
+87,Benin,9.5,2.25,0,0,0,0,Vizocom,50,30,10
+88,Burkina Faso,13,-2,0,0,0,0,Vizocom,50,30,10
+89,Burundi,-3.5,30,0,0,0,0,Vizocom,50,30,10
+90,Cabo Verde,16,-24,0,0,0,0,Vizocom,50,30,10
+91,Cameroon,6,12,0,0,0,0,Vizocom,50,30,10
+92,Central African Republic,7,21,0,0,0,0,Vizocom,50,30,10
+93,Chad,15,19,0,0,0,0,Vizocom,50,30,10
+94,Comoros,-12.1667,44.25,0,0,0,0,Vizocom,50,30,10
+95,Democratic Republic of the Congo,0,25,0,0,0,0,Vizocom,50,30,10
+96,Djibouti,11.5,43,0,0,0,0,Vizocom,50,30,10
+97,Egypt,27,30,0,0,0,0,Vizocom,50,30,10
+98,Equatorial Guinea,2,10,0,0,0,0,Vizocom,50,30,10
+99,Eritrea,15,39,0,0,0,0,Vizocom,50,30,10
+100,Eswatini,-26.5,31.5,0,0,0,0,Vizocom,50,30,10
+101,Ethiopia,8,38,0,0,0,0,Vizocom,50,30,10
+102,Gabon,-1,11.75,0,0,0,0,Vizocom,50,30,10
+103,Gambia,13.4667,-16.5667,0,0,0,0,Vizocom,50,30,10
+104,Ghana,8,-2,0,0,0,0,Vizocom,50,30,10
+105,Guinea,11,-10,0,0,0,0,Vizocom,50,30,10
+106,Guinea-Bissau,12,-15,0,0,0,0,Vizocom,50,30,10
+107,Ivory Coast,8,-5,0,0,0,0,Vizocom,50,30,10
+108,Lesotho,-29.5,28.5,0,0,0,0,Vizocom,50,30,10
+109,Liberia,6.5,-9.5,0,0,0,0,Vizocom,50,30,10
+110,Libya,25,17,0,0,0,0,Vizocom,50,30,10
+111,Madagascar,-20,47,0,0,0,0,Vizocom,50,30,10
+112,Mali,17,-4,0,0,0,0,Vizocom,50,30,10
+113,Mauritania,20,-12,0,0,0,0,Vizocom,50,30,10
+114,Mauritius,-20.2833,57.55,0,0,0,0,Vizocom,50,30,10
+115,Morocco,32,-5,0,0,0,0,Vizocom,50,30,10
+116,namibia,-22,17,0,0,0,0,Vizocom,50,30,10
+117,Niger,16,8,0,0,0,0,Vizocom,50,30,10
+118,Republic of the Congo,0,25,0,0,0,0,Vizocom,50,30,10
+119,São Tomé and Príncipe,1,7,0,0,0,0,Vizocom,50,30,10
+120,Senegal,14,-14,0,0,0,0,Vizocom,50,30,10
+121,Seychelles,-4.5833,55.6667,0,0,0,0,Vizocom,50,30,10
+122,Sierra Leone,8.5,-11.5,0,0,0,0,Vizocom,50,30,10
+123,Somalia,10,49,0,0,0,0,Vizocom,50,30,10
+124,South Africa,-29,24,0,0,0,0,Vizocom,50,30,10
+125,South Sudan,8,30,0,0,0,0,Vizocom,50,30,10
+126,Sudan,15,30,0,0,0,0,Vizocom,50,30,10
+127,Tanzania,-6,35,0,0,0,0,Vizocom,50,30,10
+128,Togo,8,1.1667,0,0,0,0,Vizocom,50,30,10
+129,Tunisia,34,9,0,0,0,0,Vizocom,50,30,10
+130,Uganda,1,32,0,0,0,0,Vizocom,50,30,10
+131,Zimbabwe,-20,30,0,0,0,0,Vizocom,50,30,10
+132,Fiji,-18,175,0,0,0,0,Vizocom,50,30,10
+133,Kiribati,1.4167,173,0,0,0,0,Vizocom,50,30,10
+134,Marshall Islands,9,168,0,0,0,0,Vizocom,50,30,10
+135,Micronesia,6.9167,158.25,0,0,0,0,Vizocom,50,30,10
+136,nauru,-0.5333,166.9167,0,0,0,0,Vizocom,50,30,10
+137,Palau,7.5,134.5,0,0,0,0,Vizocom,50,30,10
+138,Papua New Guinea,-6,147,0,0,0,0,Vizocom,50,30,10
+139,Samoa,-13.5833,-172.3333,0,0,0,0,Vizocom,50,30,10
+140,Solomon Islands,-8,159,0,0,0,0,Vizocom,50,30,10
+141,Tonga,-20,-175,0,0,0,0,Vizocom,50,30,10
+142,Tuvalu,-8,178,0,0,0,0,Vizocom,50,30,10
+143,Vanuatu,-16,167,0,0,0,0,Vizocom,50,30,10
+144,United States,37.0902,-95.7129,1,35,90,27,Hughesnet & Viasat,0,0,0
+145,Mexico,23.6345,-102.5528,0,31,95,25,Hughesnet & Viasat,0,0,0
+146,Canada,56.1304,-106.3468,1,48,100,17,"Xplore Inc., Bell, Galaxy Broadband",0,0,0
+147,Guatemala,15.7835,-90.2308,1,44,130,20,BusinessCom Networks,0,0,0
+148,Haiti,18.9712,-72.2852,1,48,98,15,0,0,0,0
+149,Dominican Republic,18.7357,-70.1627,1,55,72,14,"Ntvsat, BusinessCom Networks",0,0,0
+150,Cuba,21.5218,-77.7812,0,0,0,0,0,0,0,0
+151,Honduras,15.2,-86.2419,1,46,162,25,BusinessCom Networks,0,0,0
+152,Nicaragua,12.8654,-85.2072,0,0,0,0,BusinessCom Networks,0,0,0
+153,El Salvador,13.7942,-88.8965,1,44,140,17,0,0,0,0
+154,Costa Rica,9.7489,-83.7534,1,49,152,20,Itellum,0,0,0
+155,Panama,8.538,-80.7821,1,32,190,26,Viasat,0,0,0
+156,Jamaica,18.1096,-77.2975,1,37,120,23,Globaltt,0,0,0
+157,Trinidad and Tobago,10.6918,-61.2225,1,68,97,28,"BusinessCom Networks, Globaltt",0,0,0
+158,Bahamas,25.0343,-77.3963,1,33,140,25,BusinessCom Networks,0,0,0
+159,Belize,17.1899,-88.4976,0,0,0,0,0,0,0,0
+160,Barbados,13.1939,-59.5432,1,65,120,28,"Globaltt, BusinessCom Networks",0,0,0
+161,Saint Lucia,13.9094,-60.9789,0,0,0,0,BusinessCom Networks,0,0,0
+162,Grenada,12.1165,-61.679,0,0,0,0,Hughesnet & Viasat,0,0,0
+163,Saint Vincent and the Grenadines,12.9843,-61.2872,0,0,0,0,BusinessCom Networks,0,0,0
+164,Antigua and Barbuda,17.0608,-61.7964,0,0,0,0,BusinessCom Networks,0,0,0
+165,Dominica,15.415,-61.371,0,0,0,0,"Ntvsat, BusinessCom Networks",0,0,0
+166,Saint Kitts and Nevis,17.3578,-62.783,0,0,0,0,BusinessCom Networks,0,0,0
+167,Argentina,-38.4161,-63.6167,1,41,295,51,Amazon Kuiper & OneWeb,0,0,0
+168,Bolivia,-16.2902,-63.5887,0,0,0,0,Hughesnet,0,0,0
+169,Brazil,-14.235,-51.9253,0,0,0,0,Vizocom VSAT,0,0,0
+170,Chile,-35.6751,-71.543,1,31,290,41,HughesNet,0,0,0
+171,Colombia,4.5709,-74.2973,1,31,253,36,HughesNet,0,0,0
+172,Ecuador,1.8312,-78.1834,1,85,226,35,Vizocom VSAT & HughesNet,0,0,0
+173,Guyana,4.8604,-58.9302,0,0,0,0,NT vsat,0,0,0
+174,Paraguay,-23.4425,-58.4438,1,45,261,43,VSAT technology,0,0,0
+175,Peru,-9.19,-75.0152,1,35,262,41,Viasat & Hughesnet,0,0,0
+176,Suriname,3.9193,-56.0278,0,0,0,0,VSAT technology,0,0,0
+177,Uruguay,-32.5228,-55.7658,0,0,0,0,Vizocom,0,0,0
+178,Venezuela,6.4238,-66.5897,0,0,0,0,Vizocom,0,0,0

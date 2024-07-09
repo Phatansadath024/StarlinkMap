@@ -1,0 +1,131 @@
+import logging
+import json
+import azure.functions as func
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+import pandas as pd
+import folium   
+from folium.plugins import Search
+import psycopg2
+
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+
+@app.route(route="http_trigger")
+def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+
+    connection_string = "DefaultEndpointsProtocol=https;AccountName=starlinkstorage;AccountKey=0adopWZIVEn6yAgXi8eflcDuB47qjIx+lNfEQgvxaWRO88iqAYUs36ZujGwOTuuhe3GQt3OdX10T+AStBoVrgQ==;EndpointSuffix=core.windows.net"
+    container_name = "countries"
+    blob_name = "countries.geojson"
+
+    # Update connection string information
+    host = "weu-starlink-map-postgresql.postgres.database.azure.com"
+    port = "5432"
+    dbname = "StarlinkDB"
+    user = "starlinkroot"
+    password = "Sadath@123"
+
+    try:
+        blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+        blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+        blob_data = json.loads(blob_client.download_blob().readall().decode('utf-8'))
+        logging.info(type(blob_data))
+        # Construct connection string
+        conn_string = f"host={host} port={port} user={user} dbname={dbname} password={password}"
+        logging.info("Trying to connect...")
+        
+        with psycopg2.connect(conn_string) as conn:
+            logging.info("Connection established")
+            query = "select id, country, longitude, latitude, available, latency, download_speed, upload_speed, other_options, latency_1, download_speed_1, upload_speed_1 from satarlink_db"
+            cursor = conn.cursor()
+            cursor.execute(query)
+            df = pd.DataFrame(cursor.fetchall(), columns=["id", "country", "longitude", "latitude", "available", "latency", "download_speed", "upload_speed", "other_options", "latency_1", "download_speed_1", "upload_speed_1"])
+
+
+            # Create a map centered around Europe
+            map = folium.Map(location=[51.1657, 10.4515], zoom_start=4)  # Centered at Germany for example
+            marker_group = folium.FeatureGroup(name="Starlink Locations")
+            # Function to build the popup HTML
+            def build_popup_html(column):
+                popup_html = '<div style="font-size: 14px;"><b>Starlink Information:</b><br>'
+                if column['available'] == 1:
+                    popup_html += f'<b>Starlink Availability:</b> Yes<br>'
+                    popup_html += f'<b>Latency:</b> {column["latency"]} ms<br>'
+                    popup_html += f'<b>Upload Speed:</b> {column["upload_speed"]} Mbps<br>'
+                    popup_html += f'<b>Download Speed:</b> {column["download_speed"]} Mbps<br>'
+                else:
+                    popup_html += f'<b>Starlink Availability:</b> No<br>'
+                    if pd.notnull(column['other_options']):
+                        popup_html += f'<b>Other Options:</b> {column["other_options"]}<br>'
+                        popup_html += f'<b>Latency 1:</b> {column["latency_1"]} ms<br>'
+                        popup_html += f'<b>Upload Speed 1:</b> {column["upload_speed_1"]} Mbps<br>'
+                        popup_html += f'<b>Download Speed 1:</b> {column["download_speed_1"]} Mbps<br>'
+                popup_html += '</div>'
+                return popup_html
+            
+            for index, column in df.iterrows():
+                try:
+                    latitude = float(column['latitude'])
+                    longitude = float(column['longitude'])
+                    
+                    popup_html = build_popup_html(column)
+                    
+                    if column['available'] == 1:
+                        icon_color = 'lightgreen'
+                    else:
+                        icon_color = 'red'
+                    
+                    folium.Marker(
+                        location=[latitude, longitude],
+                        tooltip=folium.Tooltip(f"Country: {column['country']} - Latency: {column['latency']} ms" if pd.notnull(column['latency']) else f"Country: {column['country']} - No latency data"),
+                        popup=folium.Popup(popup_html, max_width=250),
+                        icon=folium.Icon(icon="cloud", color=icon_color),
+                    ).add_to(marker_group)
+                except ValueError as e:
+                    print(f"Error processing column {index}: {e}")
+                except KeyError as e:
+                    print(f"Missing key in column {index}: {e}")
+            marker_group.add_to(map)
+
+            # Verify 'ADMIN' field in GeoJSON data
+            for feature in blob_data['features']:
+                if 'ADMIN' not in feature['properties']:
+                    raise KeyError(f"The field 'ADMIN' is not available in the properties of the feature: {feature}")
+
+            # Style function for GeoJSON layer
+            def style_function(feature):
+                return {
+                    'fillColor': 'blue',
+                    'color': 'black',
+                    'weight': 1.5
+                }
+
+            # Style function for highlighting search result
+            def highlight_function(feature):
+                return {
+                    'fillColor': 'white',
+                    'color': 'yellow',
+                    'weight': 3
+                }
+
+            # Create a GeoJSON layer
+            geojson_layer = folium.GeoJson(
+                blob_data, 
+                name='geojson',
+                style_function=style_function,
+                highlight_function=highlight_function,
+                tooltip=folium.GeoJsonTooltip(fields=['ADMIN'])  # Ensure 'ADMIN' is a property in your GeoJSON
+            ).add_to(map)
+
+
+            # Add a search box for GeoJSON data
+            search_geojson = Search(
+                layer=geojson_layer,
+                search_label='ADMIN',  # Ensure this matches the property used in the GeoJSON tooltip
+                placeholder='Search by country',
+                collapsed=False
+            ).add_to(map)
+            html = map._repr_html_()
+        return func.HttpResponse(html, mimetype="text/html")
+    except Exception as e:
+        logging.error(f"Error reading blob: {e}")
+        return func.HttpResponse(f"Error reading blob: {e}", status_code=500)
